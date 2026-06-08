@@ -180,7 +180,7 @@ class AddExpenseWindow(tk.Toplevel):
         self._center_window()
 
     def build_ui(self):
-        frm = ttk.LabelFrame(self, text="Harcama Bilgileri", bootstyle="success")
+        frm = ttk.Labelframe(self, text="Harcama Bilgileri", bootstyle="success")
         frm.pack(fill="both", expand=True, padx=15, pady=15)
 
         pad_lbl = {"padx": (10, 5), "pady": 7, "sticky": "e"}
@@ -312,7 +312,7 @@ class EditExpenseWindow(tk.Toplevel):
         self._center_window()
 
     def build_ui(self):
-        frm = ttk.LabelFrame(self, text="Harcama Bilgileri", bootstyle="success")
+        frm = ttk.Labelframe(self, text="Harcama Bilgileri", bootstyle="success")
         frm.pack(fill="both", expand=True, padx=15, pady=15)
 
         pad_lbl = {"padx": (10, 5), "pady": 7, "sticky": "e"}

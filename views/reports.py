@@ -27,7 +27,7 @@ class ReportsWindow(tk.Toplevel):
         self._center_window()
 
     def build_ui(self):
-        frm_info = ttk.LabelFrame(self, text="Excel Raporu", bootstyle="success")
+        frm_info = ttk.Labelframe(self, text="Excel Raporu", bootstyle="success")
         frm_info.pack(fill="x", padx=15, pady=(15, 0))
 
         ttk.Label(frm_info,
@@ -38,7 +38,7 @@ class ReportsWindow(tk.Toplevel):
                                      bootstyle="success", command=self.on_export)
         self.btn_export.pack(anchor="e", padx=10, pady=(0, 10))
 
-        frm_preview = ttk.LabelFrame(self, text="Harcama Önizleme", bootstyle="success")
+        frm_preview = ttk.Labelframe(self, text="Harcama Önizleme", bootstyle="success")
         frm_preview.pack(fill="both", expand=True, padx=15, pady=10)
 
         cols = ("date", "description", "category", "amount", "paid_by")

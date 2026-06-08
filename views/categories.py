@@ -24,7 +24,7 @@ class CategoriesWindow(tk.Toplevel):
         self._center_window()
 
     def build_ui(self):
-        frm_form = ttk.LabelFrame(self, text="Kategori Ekle", bootstyle="success")
+        frm_form = ttk.Labelframe(self, text="Kategori Ekle", bootstyle="success")
         frm_form.pack(fill="x", padx=15, pady=(15, 0))
 
         ttk.Label(frm_form, text="Kategori Adı:").grid(row=0, column=0, sticky="e",
@@ -45,7 +45,7 @@ class CategoriesWindow(tk.Toplevel):
                                      command=self.on_cancel, state="disabled")
         self.btn_cancel.pack(side="left")
 
-        frm_list = ttk.LabelFrame(self, text="Kategori Listesi", bootstyle="success")
+        frm_list = ttk.Labelframe(self, text="Kategori Listesi", bootstyle="success")
         frm_list.pack(fill="both", expand=True, padx=15, pady=10)
 
         self.tv = ttk.Treeview(frm_list, columns=("name",), show="headings",

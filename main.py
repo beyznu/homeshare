@@ -32,7 +32,7 @@ class LoginWindow(ttk.Window):
         self.lbl_subtitle.pack(pady=(0, 25))
 
         # ── Form frame ──
-        self.frm = ttk.LabelFrame(self, text="Giriş Yap", bootstyle="success")
+        self.frm = ttk.Labelframe(self, text="Giriş Yap", bootstyle="success")
         self.frm.pack(padx=40, fill="x")
 
         ttk.Label(self.frm, text="Kullanıcı Adı:").grid(row=0, column=0, sticky="e",

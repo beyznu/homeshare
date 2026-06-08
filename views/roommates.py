@@ -24,7 +24,7 @@ class RoommatesWindow(tk.Toplevel):
         self._center_window()
 
     def build_ui(self):
-        frm_form = ttk.LabelFrame(self, text="Ev Arkadaşı Ekle / Düzenle", bootstyle="success")
+        frm_form = ttk.Labelframe(self, text="Ev Arkadaşı Ekle / Düzenle", bootstyle="success")
         frm_form.pack(fill="x", padx=15, pady=(15, 0))
 
         ttk.Label(frm_form, text="İsim:").grid(row=0, column=0, sticky="e", padx=(10, 5), pady=8)
@@ -53,7 +53,7 @@ class RoommatesWindow(tk.Toplevel):
                                      command=self.on_cancel, state="disabled")
         self.btn_cancel.pack(side="left")
 
-        frm_list = ttk.LabelFrame(self, text="Ev Arkadaşları Listesi", bootstyle="success")
+        frm_list = ttk.Labelframe(self, text="Ev Arkadaşları Listesi", bootstyle="success")
         frm_list.pack(fill="both", expand=True, padx=15, pady=10)
 
         self.tv = ttk.Treeview(frm_list, columns=("name", "email"),

@@ -25,7 +25,7 @@ class PaymentsWindow(tk.Toplevel):
         self._center_window()
 
     def build_ui(self):
-        frm_form = ttk.LabelFrame(self, text="Yeni Ödeme Ekle", bootstyle="success")
+        frm_form = ttk.Labelframe(self, text="Yeni Ödeme Ekle", bootstyle="success")
         frm_form.pack(fill="x", padx=15, pady=(15, 0))
 
         pad_lbl = {"padx": (10, 5), "pady": 7, "sticky": "e"}
@@ -70,7 +70,7 @@ class PaymentsWindow(tk.Toplevel):
         ttk.Button(frm_btns, text="Temizle", bootstyle="secondary-outline",
                    command=self.on_clear).pack(side="left")
 
-        frm_list = ttk.LabelFrame(self, text="Ödeme Geçmişi", bootstyle="success")
+        frm_list = ttk.Labelframe(self, text="Ödeme Geçmişi", bootstyle="success")
         frm_list.pack(fill="both", expand=True, padx=15, pady=10)
 
         cols = ("date", "from_name", "to_name", "amount", "note")

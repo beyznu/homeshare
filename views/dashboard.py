@@ -47,7 +47,7 @@ class DashboardWindow(tk.Toplevel):
         frm_middle.columnconfigure(1, weight=2)
 
         # ── Sol: Bakiye özeti ──
-        frm_balance = ttk.LabelFrame(frm_middle, text="Bakiye Özeti", bootstyle="success")
+        frm_balance = ttk.Labelframe(frm_middle, text="Bakiye Özeti", bootstyle="success")
         frm_balance.grid(row=0, column=0, sticky="nsew", padx=(0, 8))
 
         self.tv_balance = ttk.Treeview(frm_balance, columns=("name", "balance"),
@@ -60,7 +60,7 @@ class DashboardWindow(tk.Toplevel):
         self.tv_balance.pack(fill="both", expand=True, padx=8, pady=8)
 
         # ── Sağ: Son harcamalar ──
-        frm_expenses = ttk.LabelFrame(frm_middle, text="Son Harcamalar", bootstyle="success")
+        frm_expenses = ttk.Labelframe(frm_middle, text="Son Harcamalar", bootstyle="success")
         frm_expenses.grid(row=0, column=1, sticky="nsew")
 
         cols = ("date", "description", "amount", "paid_by")
